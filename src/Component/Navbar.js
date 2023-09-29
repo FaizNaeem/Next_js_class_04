@@ -50,10 +50,9 @@ const Navbar = () => {
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    {/* <form class="form-inline my-2 my-lg-0"> */}
+  
   
       <button class="btn btn-outline-success my-2 my-sm-0" onClick={handleOnClickLoginBtn} type="submit">{user ? user.email : "Login"}</button>
-    {/* </form> */}
   </div>
 </nav>
 <div>
