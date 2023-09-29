@@ -51,7 +51,6 @@ const Navbar = () => {
       </li>
     </ul>
   
-  
       <button class="btn btn-outline-success my-2 my-sm-0" onClick={handleOnClickLoginBtn} type="submit">{user ? user.email : "Login"}</button>
   </div>
 </nav>
