@@ -1,6 +1,5 @@
 
 'use client'
-
 import signIn from "@/confiq/singin"
 import signUp from "@/confiq/signup"
 import { useRouter } from "next/navigation"
@@ -32,7 +31,9 @@ export default function Login() {
             const { result, error } = await signUp(email, password)
             console.log('result, error->', result, error)
             if (result) {
-                router.replace('/')
+                alert("Signup Success")
+                authType === 'login'
+                // router.replace('/')
             } else {
                 alert(error.message)
             }
