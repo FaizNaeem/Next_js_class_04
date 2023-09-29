@@ -17,6 +17,7 @@ const Navbar = () => {
             signout()
         }
     }
+    // console.log(user.email);
 
     return(
 <>
@@ -51,10 +52,13 @@ const Navbar = () => {
     </ul>
     {/* <form class="form-inline my-2 my-lg-0"> */}
   
-      <button class="btn btn-outline-success my-2 my-sm-0" onClick={handleOnClickLoginBtn} type="submit">{user ? 'Logout' : "Login"}</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" onClick={handleOnClickLoginBtn} type="submit">{user ? user.email : "Login"}</button>
     {/* </form> */}
   </div>
 </nav>
+<div>
+  <h1 align ="center">Hello :-- {user.email}</h1>
+</div>
 </>
     )
 }
