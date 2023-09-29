@@ -57,7 +57,7 @@ const Navbar = () => {
   </div>
 </nav>
 <div>
-  <h1 align ="center">Hello :-- {user.email}</h1>
+  <h1 align ="center"> {user? "Hello :--" + user.email : "User empty"}</h1>
 </div>
 </>
     )
