@@ -45,15 +45,18 @@ export default function Login() {
             <div className="flex w-6/10 justify-between bg-white">
                 <div
                     onClick={() => setAuthType('login')}
-                    style={{
-                        backgroundColor: authType === 'login' ? 'skyblue' : 'white'
-                    }} className="flex cursor-pointer p-4 item-center w-6/9 text-center"> <span>Login</span>  </div>
+                    style={{ marginTop:"30px", borderRadius:"4px",
+                        backgroundColor: authType === 'login' ? '#0066F1' : 'white',
+                        color:authType === 'signup' ? 'black' : 'white'
+
+                    }} className="flex cursor-pointer p-4 item-center w-6/12 text-center"> <span>Login</span>  </div>
                 <div
                     onClick={() => setAuthType('signup')}
-                    style={{
-                        backgroundColor: authType === 'signup' ? 'skyblue' : 'white'
+                    style={{marginTop:"30px",borderRadius:"4px",
+                        backgroundColor: authType === 'signup' ? 'skyblue' : 'white',
+                        color:authType === 'signup' ? 'black' : 'black'
                     }}
-                    className="flex cursor-pointer p-4 item-center w-6/9 text-center"> <span>Signup</span>  </div>
+                    className="flex cursor-pointer p-4 item-center w-6/12 text-center"> <span>Signup</span>  </div>
             </div>
 
             <section className="mt-8 text-gray-600 body-font relative">
